@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: "AHAMONO-Monospaced";
+    src: url('./assets/font/AHAMONO-Monospaced.otf');
+    // url('Thonburi-Bold.eot'); /* IE */
+}
+
 html {
     background-color: #f0f0f0;
     min-height: 100vh;
@@ -7,3 +13,5 @@ html {
 body {
     margin: 0;
 }
+
+// font sizes

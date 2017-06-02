@@ -1,4 +1,13 @@
 header {
+    font-family: AHAMONO-Monospaced;
     margin: 2.5rem 2.5rem 0 2.5rem;
     height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+
 }
