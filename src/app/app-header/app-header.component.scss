@@ -1,13 +1,26 @@
 header {
-    font-family: AHAMONO-Monospaced;
-    margin: 2.5rem 2.5rem 0 2.5rem;
-    height: 120px;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index:1001;
+}
 
+.header--content {
+    margin: 5%;
+    height: 120px;
     display: flex;
     justify-content: space-between;
 }
 
 ul {
     list-style: none;
+    li {
+        text-align: right;
+        margin-bottom: 0.3rem;
+    }
+}
 
+h3, ul {
+    margin: 0;
+    font-size: 1rem;
 }

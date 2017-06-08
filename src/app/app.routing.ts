@@ -1,12 +1,18 @@
+import { MainComponent } from './main/main.component';
+import { IntroComponent } from './intro/intro.component';
 import { Routes, RouterModule } from "@angular/router";
 
 const APP_ROUTES: Routes = [
-    // { 
-    //     path: 'home', 
-    //     component: HomeComponent 
-    // },
+    { 
+        path: '', 
+        component: IntroComponent
+    },
+    {
+        path: 'main',
+        component: MainComponent
+    },
     // {
-    //     path: '',
+    //     path: 'main',
     //     redirectTo: 'home',
     //     pathMatch: 'full'
     // },
