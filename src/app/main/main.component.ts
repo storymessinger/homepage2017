@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
 
 @Component({
   selector: 'app-main',
@@ -7,18 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  private isOpacity = 1;
+  private test = [
+    { projectId: 0 },
+    { projectId: 0 }
+  ]
 
-  constructor() { }
+
+  private isOpacity:any;
+  private id:number;
+  items: FirebaseListObservable<any[]>;
+
+  constructor(db: AngularFireDatabase) { 
+    this.items = db.list('/items');
+  }
 
   ngOnInit() {
   }
 
-  opacityToZero() {
-    this.isOpacity = 0;
+  opacityToZero(event) {
+    this.isOpacity = false;
+    this.id = event.target.id;
+    console.log(this.id);
   }
   opacityToOne() {
-    this.isOpacity = 1;
+    this.isOpacity = true;
+  }
+
+  opacityTo() {
+    return this.id;
   }
 
 }

@@ -9,6 +9,10 @@ import { Routing } from './app.routing';
 import { IntroComponent } from './intro/intro.component';
 import { MainComponent } from './main/main.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,9 @@ import { MainComponent } from './main/main.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    Routing
+    Routing,
+    AngularFireModule.initializeApp(environment.firebase, 'app-firebase'),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
