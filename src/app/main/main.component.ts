@@ -13,31 +13,33 @@ export class MainComponent implements OnInit {
     { projectId: 0 }
   ]
 
-  private projects = [
+  public projects = [
     {
-      name: "Jiyoun Hello",
+      name: "Primrose",
+      year: 2014,
       id: 1,
       list: [
         { projectId: 1,
-          img: "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
-          color: "#FF836C"
+          img: "./../../assets/Projects/2014_Primrose/img/pic01-small.jpg", 
+          color: "#f2a05d"
          },
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
-          color: "#FF836C"
+          color: "#f2a05d"
          },
         { projectId: 1,
-          img: "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
-          color: "#FF836C"
+          img: "./../../assets/Projects/2014_Primrose/img/pic03-small.jpg", 
+          color: "#f2a05d"
          },
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
-          color: "#FF836C"
+          color: "#f2a05d"
          }
       ]
     },
     {
       name: "Jundong Hello",
+      year: 2014,
       id: 2,
       list: [
         { projectId: 2,
@@ -52,6 +54,7 @@ export class MainComponent implements OnInit {
     },
     {
       name: "Munggoon Hello",
+      year: 2014,
       id: 3,
       list: [
         { projectId: 3,

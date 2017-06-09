@@ -18,3 +18,13 @@ body {
 }
 
 // font sizes
+@media (min-width: 415px) {
+    html{
+        font-size:18px;
+    }
+}
+@media (min-width: 768px) {
+    html{
+        font-size:20px;
+    }
+}

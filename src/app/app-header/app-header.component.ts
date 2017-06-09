@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TweenLite, TimelineLite } from 'gsap';
+import 'gsap';
+declare var TweenLite, Power2:any;
 
 @Component({
   selector: 'app-header',
@@ -13,12 +14,12 @@ export class AppHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.canvasDrawing(this.selectProject);
-    // TweenLite.ticker.addEventListener("tick",this.canvasDrawing(this.selectProject));
+    // this.canvasDrawing(this.selectProject);
+    TweenLite.ticker.addEventListener("tick",this.canvasDrawing);
   }
 
 
-  canvasDrawing(selected) {
+  canvasDrawing() {
 
     let canvas:any = document.getElementById("canv");
     let context:CanvasRenderingContext2D = canvas.getContext('2d');
@@ -26,20 +27,22 @@ export class AppHeaderComponent implements OnInit {
     context.canvas.height = window.innerHeight;
 
     let boxWidth = 0;
-    if (selected == true) {
+    if (this.selectProject== true) {
       boxWidth = 2;
     } else {
-      boxWidth = 0;
+      boxWidth = 3;
     }
 
+    console.log(boxWidth);
     // get the iMax
     const xMax = Math.floor(context.canvas.width / 50);
     const yMax = Math.floor(context.canvas.height / 50);
 
     for(let j=0; j <= yMax; j++) {
       for(let i=0; i <= xMax; i++) {
-        let myArray = ["#FF836C", "#1D66FF","#A0B27D"];
-        let randomColor = myArray[Math.floor(Math.random() * myArray.length)];
+        // let myArray = ["#FF836C", "#1D66FF","#A0B27D"];
+        // let randomColor = myArray[Math.floor(Math.random() * myArray.length)];
+        let randomColor = '#bbbbbb';
         // random? color
         context.fillStyle = randomColor;
         // dedicated position

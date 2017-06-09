@@ -41,6 +41,9 @@ canvas {
     margin:0;
     font-size: 0.81rem;
     white-space: pre;
+    span {
+        color: grey;
+    }
 }
 
 .hide {
@@ -54,7 +57,7 @@ canvas {
 @media (min-width: 415px) {
     .project__title {
         top:unset;
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
     .project__img__container {
         display: inline-block;
@@ -71,8 +74,36 @@ canvas {
 
 @media (min-width: 768px) {
     .project__img, .project__spacer {
-        width: calc(16.666666% - 10px);
+        width: calc(16.666666% - 15px);
     }
 }
 
+@media (min-width: 1024px) {
+    .project__img, .project__spacer {
+        width: calc(14.285714% - 10px)
+    }
+}
 
+@media (min-width: 1553px) {
+    .project__img, .project__spacer {
+        width: calc(12.5% - 10px)
+    }
+}
+
+@media (min-width: 1777px) {
+    .project__img, .project__spacer {
+        width: calc(11.111111% - 10px)
+    }
+}
+
+@media (min-width: 1999px) {
+    .project__img, .project__spacer {
+        width: calc(10% - 10px)
+    }
+}
+
+@media (min-width: 2223px) {
+    .project__img, .project__spacer {
+        width: calc(9.090909% - 10px);
+    }
+}

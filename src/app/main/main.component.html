@@ -20,7 +20,7 @@
           <!--<img [ngClass]="{'hide':isOpacity__01 == 0 }" src="./../../assets/test.jpg">-->
           <!--<img [ngStyle]="{'opacity': opacityTo() }" src="./../../assets/test.jpg">-->
           <img [ngClass]="{'hide': isOpacity == 0 && opacityTo() != item.projectId }" [src]="item.img">
-          <h5 *ngIf="i == 0" class="project__title">{{project.name}}</h5>
+          <h5 *ngIf="i == 0" class="project__title">{{project.name}} <span>{{project.year}}</span></h5>
         </div>
         <!--<h5 class="project__title">Jiyoun Hello</h5>-->
       </div>
