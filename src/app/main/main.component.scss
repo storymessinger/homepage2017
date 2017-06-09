@@ -64,4 +64,10 @@ canvas {
     }
 }
 
+@media (min-width: 768px) {
+    .project__img, .project__spacer {
+        width: calc(16.666666% - 10px);
+    }
+}
+
 

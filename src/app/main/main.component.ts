@@ -13,6 +13,63 @@ export class MainComponent implements OnInit {
     { projectId: 0 }
   ]
 
+  private projects = [
+    {
+      name: "Jiyoun Hello",
+      id: 1,
+      list: [
+        { projectId: 1,
+          img: "./../../assets/test.jpg",
+          color: "#FF836C"
+         },
+        { projectId: 1,
+          img: "./../../assets/test.jpg",
+          color: "#FF836C"
+         },
+        { projectId: 1,
+          img: "./../../assets/test.jpg",
+          color: "#FF836C"
+         }
+      ]
+    },
+    {
+      name: "Jundong Hello",
+      id: 2,
+      list: [
+        { projectId: 2,
+          img: "./../../assets/test.jpg",
+          color: "#1D66FF"
+         },
+        { projectId: 2,
+          img: "./../../assets/test.jpg",
+          color: "#1D66FF"
+         }
+      ]
+    },
+    {
+      name: "Munggoon Hello",
+      id: 3,
+      list: [
+        { projectId: 3,
+          img: "./../../assets/test.jpg",
+          color: "#A0B27D"
+         },
+        { projectId: 3,
+          img: "./../../assets/test.jpg",
+          color: "#A0B27D"
+         },
+        { projectId: 3,
+          img: "./../../assets/test.jpg",
+          color: "#A0B27D"
+         },
+        { projectId: 3,
+          img: "./../../assets/test.jpg",
+          color: "#A0B27D"
+         },
+      ]
+    },
+  ]
+
 
   private isOpacity:any;
   private id:number;

@@ -12,13 +12,15 @@ import { MainComponent } from './main/main.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     IntroComponent,
-    MainComponent
+    MainComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
