@@ -7,7 +7,11 @@ canvas {
 }
 
 .project {
+    // Only for the mobile
     display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 14%;
+    //
     font-size:0;
     position:relative;
     // border: 1px solid black;
@@ -18,7 +22,7 @@ canvas {
 
 .project__img {
     margin-right: 10px;
-    margin-bottom: 14%;
+    margin-bottom: 5%;
     width: calc(33% - 10px);
 }
 
@@ -58,6 +62,7 @@ canvas {
     .project__img, .project__spacer {
         display: inline-block;
         width: calc(20% - 10px);
+        margin-bottom: 14%;
     }
     .project {
         display: inline;

@@ -19,15 +19,19 @@ export class MainComponent implements OnInit {
       id: 1,
       list: [
         { projectId: 1,
-          img: "./../../assets/test.jpg",
+          img: "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
           color: "#FF836C"
          },
         { projectId: 1,
-          img: "./../../assets/test.jpg",
+          img: "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
           color: "#FF836C"
          },
         { projectId: 1,
-          img: "./../../assets/test.jpg",
+          img: "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
+          color: "#FF836C"
+         },
+        { projectId: 1,
+          img: "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
           color: "#FF836C"
          }
       ]
