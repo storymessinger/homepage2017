@@ -22,10 +22,12 @@ module.exports = function(grunt) {
                         {
                             name: 'small',
                             width: 320,
-                        },{
-                            name: 'mid',
-                            width: 640,
-                        },{
+                        },
+                        // {
+                        //     name: 'mid',
+                        //     width: 640,
+                        // },
+                        {
                             name: 'big',
                             width: 1024,
                         }
