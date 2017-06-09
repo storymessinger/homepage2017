@@ -33,7 +33,6 @@ export class AppHeaderComponent implements OnInit {
       boxWidth = 3;
     }
 
-    console.log(boxWidth);
     // get the iMax
     const xMax = Math.floor(context.canvas.width / 50);
     const yMax = Math.floor(context.canvas.height / 50);
