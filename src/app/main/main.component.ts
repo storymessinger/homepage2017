@@ -38,21 +38,25 @@ export class MainComponent implements OnInit {
       ]
     },
     {
-      name: "Jundong Hello",
+      name: "SoundCloud Redesign Project",
       year: 2014,
       id: 2,
       list: [
         { projectId: 2,
           img: "./../../assets/Projects/2014_SoundCloudProject/img/pic01-small.jpg", 
-          color: "#1D66FF"
+          color: "#f36d43"
          },
         { projectId: 2,
           img: "./../../assets/Projects/2014_SoundCloudProject/img/pic02-small.jpg", 
-          color: "#1D66FF"
+          color: "#f36d43"
          },
         { projectId: 2,
           img: "./../../assets/Projects/2014_SoundCloudProject/img/pic03-small.jpg", 
-          color: "#1D66FF"
+          color: "#f36d43"
+         },
+        { projectId: 2,
+          img: "./../../assets/Projects/2014_SoundCloudProject/img/pic04-small.jpg", 
+          color: "#f36d43"
          }
       ]
     },

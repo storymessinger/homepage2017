@@ -2,7 +2,7 @@
   "name": "home2017",
   "version": "0.0.0",
   "license": "MIT",
-  "main":"server.js",
+  "main": "server.js",
   "scripts": {
     "deploy": "git push origin master && git push heroku master",
     "ng": "ng",
@@ -19,9 +19,9 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.0.4",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
-    "@angular/cli": "1.0.4",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
