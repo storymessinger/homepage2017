@@ -61,25 +61,21 @@ export class MainComponent implements OnInit {
       ]
     },
     {
-      name: "Munggoon Hello",
-      year: 2014,
+      name: "CatShelter Concept",
+      year: 2015,
       id: 3,
       list: [
         { projectId: 3,
-          img: "./../../assets/test.jpg",
-          color: "#A0B27D"
+          img: "./../../assets/Projects/2015_CatShelter/img/pic01-small.jpg", 
+          color: "#e0deeb"
          },
         { projectId: 3,
-          img: "./../../assets/test.jpg",
-          color: "#A0B27D"
+          img: "./../../assets/Projects/2015_CatShelter/img/pic02-small.jpg", 
+          color: "#e0deeb"
          },
         { projectId: 3,
-          img: "./../../assets/test.jpg",
-          color: "#A0B27D"
-         },
-        { projectId: 3,
-          img: "./../../assets/test.jpg",
-          color: "#A0B27D"
+          img: "./../../assets/Projects/2015_CatShelter/img/pic03-small.jpg", 
+          color: "#e0deeb"
          },
       ]
     },

@@ -33,6 +33,7 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "angularfire2": "^4.0.0-rc.1",
+    "body-parser": "^1.17.2",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
     "firebase": "^4.1.2",

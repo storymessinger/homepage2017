@@ -49,6 +49,13 @@ module.exports = function(grunt) {
                         cwd: 'src/assets/Projects/2014_SoundCloudProject/img/original/', 
                         dest: 'src/assets/Projects/2014_SoundCloudProject/img/', 
                     },
+                    {
+                        // Catshelter 
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2015_CatShelter/img/original/', 
+                        dest: 'src/assets/Projects/2015_CatShelter/img/', 
+                    },
                     // {
                     //     // Lifes
                     //     expand:true,
