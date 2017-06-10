@@ -82,6 +82,9 @@ canvas {
     .project__img, .project__spacer {
         width: calc(14.285714% - 10px)
     }
+    .project__title {
+        font-size: 0.91rem;
+    }
 }
 
 @media (min-width: 1553px) {

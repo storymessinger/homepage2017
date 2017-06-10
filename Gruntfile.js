@@ -56,13 +56,27 @@ module.exports = function(grunt) {
                         cwd: 'src/assets/Projects/2015_CatShelter/img/original/', 
                         dest: 'src/assets/Projects/2015_CatShelter/img/', 
                     },
-                    // {
-                    //     // Lifes
-                    //     expand:true,
-                    //     src: ['*.{jpg,gif,png}'],
-                    //     cwd: 'src/assets/Contents/Lifes/img/', 
-                    //     dest: 'src/assets/Contents/Lifes/smallimg/'
-                    // },
+                    {
+                        // Banban
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2015_Banban/img/original/', 
+                        dest: 'src/assets/Projects/2015_Banban/img/', 
+                    },
+                    {
+                        // Consumer to creator 
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2016_ConsumerToCreator/img/original/', 
+                        dest: 'src/assets/Projects/2016_ConsumerToCreator/img/', 
+                    },
+                    {
+                        // First Snow
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2014_FirstSnow/img/original/', 
+                        dest: 'src/assets/Projects/2014_FirstSnow/img/', 
+                    },
                 ]
             }
         

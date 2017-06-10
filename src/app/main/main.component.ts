@@ -21,19 +21,19 @@ export class MainComponent implements OnInit {
       list: [
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic01-small.jpg", 
-          color: "#f2a05d"
+          color: "rgba(52,52,52,0.9)"
          },
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
-          color: "#f2a05d"
+          color: "rgba(52,52,52,0.9)"
          },
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic03-small.jpg", 
-          color: "#f2a05d"
+          color: "rgba(52,52,52,0.9)"
          },
         { projectId: 1,
           img: "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
-          color: "#f2a05d"
+          color: "rgba(52,52,52,0.9)"
          }
       ]
     },
@@ -76,6 +76,63 @@ export class MainComponent implements OnInit {
         { projectId: 3,
           img: "./../../assets/Projects/2015_CatShelter/img/pic03-small.jpg", 
           color: "#e0deeb"
+         },
+      ]
+    },
+    {
+      name: "BanBan App Project (Naver UXDP)",
+      year: 2015,
+      id: 4,
+      list: [
+        { projectId: 4,
+          img: "./../../assets/Projects/2015_Banban/img/pic01-small.jpg", 
+          color: "#e54038"
+         },
+        { projectId: 4,
+          img: "./../../assets/Projects/2015_Banban/img/pic02-small.jpg", 
+          color: "#e54038"
+         },
+        { projectId: 4,
+          img: "./../../assets/Projects/2015_Banban/img/pic03-small.jpg", 
+          color: "#e54038"
+         },
+        { projectId: 4,
+          img: "./../../assets/Projects/2015_Banban/img/pic04-small.jpg", 
+          color: "#e54038"
+         },
+      ]
+    },
+    {
+      name: "Consumer to Creator(CHI 16', 3rd author)",
+      year: 2016,
+      id: 5,
+      list: [
+        { projectId: 5,
+          img: "./../../assets/Projects/2016_ConsumerToCreator/img/pic01-small.jpg", 
+          color: "rgba(255,255,255,0.8)"
+         },
+        { projectId: 5,
+          img: "./../../assets/Projects/2016_ConsumerToCreator/img/pic02-small.jpg", 
+          color: "rgba(255,255,255,0.8)"
+         },
+        { projectId: 5,
+          img: "./../../assets/Projects/2016_ConsumerToCreator/img/pic03-small.jpg", 
+          color: "rgba(255,255,255,0.8)"
+         },
+      ]
+    },
+    {
+      name: "First Snow Art Project",
+      year: 2016,
+      id: 6,
+      list: [
+        { projectId: 6,
+          img: "./../../assets/Projects/2014_FirstSnow/img/pic01-small.jpg", 
+          color: "#8293e6"
+         },
+        { projectId: 6,
+          img: "./../../assets/Projects/2014_FirstSnow/img/pic02-small.jpg", 
+          color: "#8293e6"
          },
       ]
     },
