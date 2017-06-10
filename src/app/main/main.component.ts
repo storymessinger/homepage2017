@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
 import * as _ from 'underscore';
+// import {Observable} from 'rxjs/Observable';
+// import 'rxjs/add/operator/map'
 
 @Component({
   selector: 'app-main',
@@ -13,15 +15,15 @@ export class MainComponent implements OnInit {
 
   private isOpacity:any;
   private id:number;
-  items: FirebaseListObservable<any[]>;
+  // items: FirebaseListObservable<any[]>;
+  items:any;
 
   constructor(db: AngularFireDatabase) { 
+    // this.items= db.list('/projects');
     this.items= db.list('/projects', { preserveSnapshot: true });
     this.items
     .subscribe(snapshots => {
       snapshots.forEach(snapshot => {
-        // console.log(snapshot.key)
-        // console.log(snapshot.val())
         this.projects.push(snapshot.val());
       });
       this.projects = this.dateSort_descend(this.projects);
