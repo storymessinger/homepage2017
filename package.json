@@ -2,7 +2,9 @@
   "name": "home2017",
   "version": "0.0.0",
   "license": "MIT",
+  "main":"server.js",
   "scripts": {
+    "deploy": "git push origin master && git push heroku master",
     "ng": "ng",
     "start": "node server.js",
     "postinstall": "ng build --aot -prod",
