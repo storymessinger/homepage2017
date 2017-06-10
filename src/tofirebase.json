@@ -1,0 +1,156 @@
+{
+    "journal":{
+
+    },
+    "projects": {
+        "ConsumerToCreator": {
+            "name": "Consumer to Creator(CHI 16', 3rd author)",
+            "year": 2016,
+            "month":10,
+            "id": 6,
+            "list": [
+            { "projectId": 6,
+                "smallimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic01-big.jpg", 
+                "color": "rgba(255,255,255,0.8)"
+                },
+            { "projectId": 6,
+                "smallimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic02-big.jpg", 
+                "color": "rgba(255,255,255,0.8)"
+                },
+            { "projectId": 6,
+                "smallimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ConsumerToCreator/img/pic03-big.jpg", 
+                "color": "rgba(255,255,255,0.8)"
+                }
+            ]
+        },
+        "BanBan": {
+            "name": "BanBan App Project (Naver UXDP)",
+            "year": 2015,
+            "month":6,
+            "id": 5,
+            "list": [
+            { "projectId": 5,
+                "smallimg": "./../../assets/Projects/2015_Banban/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_Banban/img/pic01-big.jpg", 
+                "color": "#e54038"
+                },
+            { "projectId": 5,
+                "smallimg": "./../../assets/Projects/2015_Banban/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_Banban/img/pic02-big.jpg", 
+                "color": "#e54038"
+                },
+            { "projectId": 5,
+                "smallimg": "./../../assets/Projects/2015_Banban/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_Banban/img/pic03-big.jpg", 
+                "color": "#e54038"
+                },
+            { "projectId": 5,
+                "smallimg": "./../../assets/Projects/2015_Banban/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_Banban/img/pic04-big.jpg", 
+                "color": "#e54038"
+                }
+            ]
+        },
+        "CatShelter": {
+            "name": "CatShelter Concept",
+            "year": 2015,
+            "month":5,
+            "id": 4,
+            "list": [
+            { "projectId": 4,
+                "smallimg": "./../../assets/Projects/2015_CatShelter/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_CatShelter/img/pic01-big.jpg", 
+                "color": "#e0deeb"
+                },
+            { "projectId": 4,
+                "smallimg": "./../../assets/Projects/2015_CatShelter/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_CatShelter/img/pic02-big.jpg", 
+                "color": "#e0deeb"
+                },
+            { "projectId": 4,
+                "smallimg": "./../../assets/Projects/2015_CatShelter/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_CatShelter/img/pic03-big.jpg", 
+                "color": "#e0deeb"
+                }
+            ]
+        },
+        "FirstSnow": {
+            "name": "First Snow Art Project",
+            "year": 2014,
+            "month":12,
+            "id": 3,
+            "list": [
+            { "projectId": 3,
+                "smallimg": "./../../assets/Projects/2014_FirstSnow/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_FirstSnow/img/pic01-big.jpg", 
+                "color": "#8293e6"
+                },
+            { "projectId": 3,
+                "smallimg": "./../../assets/Projects/2014_FirstSnow/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_FirstSnow/img/pic02-big.jpg", 
+                "color": "#8293e6"
+                }
+            ]
+        },
+
+        "SoundCloud": {
+            "name": "SoundCloud Redesign Project",
+            "year": 2014,
+            "month":11,
+            "id": 2,
+            "list": [
+            { "projectId": 2,
+                "smallimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic01-big.jpg", 
+                "color": "#f36d43"
+                },
+            { "projectId": 2,
+                "smallimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic02-big.jpg", 
+                "color": "#f36d43"
+                },
+            { "projectId": 2,
+                "smallimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic03-big.jpg", 
+                "color": "#f36d43"
+                },
+            { "projectId": 2,
+                "smallimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_SoundCloudProject/img/pic04-big.jpg", 
+                "color": "#f36d43"
+                }
+            ]
+        },
+    "Primrose": {
+            "name": "Primrose",
+            "year": 2014,
+            "month":11,
+            "id": 1,
+            "list": [
+            { "projectId": 1,
+                "smallimg": "./../../assets/Projects/2014_Primrose/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_Primrose/img/pic01-big.jpg", 
+                "color": "rgba(52,52,52,0.9)"
+                },
+            { "projectId": 1,
+                "smallimg": "./../../assets/Projects/2014_Primrose/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_Primrose/img/pic02-big.jpg", 
+                "color": "rgba(52,52,52,0.9)"
+                },
+            { "projectId": 1,
+                "smallimg": "./../../assets/Projects/2014_Primrose/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_Primrose/img/pic03-big.jpg", 
+                "color": "rgba(52,52,52,0.9)"
+                },
+            { "projectId": 1,
+                "smallimg": "./../../assets/Projects/2014_Primrose/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2014_Primrose/img/pic04-big.jpg", 
+                "color": "rgba(52,52,52,0.9)"
+                }
+            ]
+        }
+    }
+}

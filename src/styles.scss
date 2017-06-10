@@ -18,6 +18,12 @@ body {
     margin: 0;
 }
 
+// to solve ios horizontal scroll issue
+body {
+        overflow: hidden;
+        overflow-y: auto;
+}
+
 // font sizes
 @media (min-width: 415px) {
     html{
