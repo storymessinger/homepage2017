@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
-import * as _ from 'underscore';
-// import {Observable} from 'rxjs/Observable';
-// import 'rxjs/add/operator/map'
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/map'
 
 @Component({
   selector: 'app-main',
@@ -11,28 +10,18 @@ import * as _ from 'underscore';
 })
 export class MainComponent implements OnInit {
 
-  public projects = [];
 
   private isOpacity:any;
   private id:number;
-  // items: FirebaseListObservable<any[]>;
-  items:any;
+  projects:any;
 
   constructor(db: AngularFireDatabase) { 
-    // this.items= db.list('/projects');
-    this.items= db.list('/projects', { preserveSnapshot: true });
-    this.items
-    .subscribe(snapshots => {
-      snapshots.forEach(snapshot => {
-        this.projects.push(snapshot.val());
-      });
-      this.projects = this.dateSort_descend(this.projects);
-    })
+    this.projects = db.list('/projects')
+      .map(item => item.sort((a,b) => b['year'] - a['year'] || b['month'] - a['month']));
   }
 
   ngOnInit() {
   }
-
   opacityToZero(event) {
     this.isOpacity = false;
     this.id = event.target.id;
@@ -43,14 +32,6 @@ export class MainComponent implements OnInit {
 
   opacityTo() {
     return this.id;
-  }
-
-  dateSort_descend(input) {
-    let ascend = _.chain(input)
-                .sortBy( item => item['month'])
-                .sortBy( item => item['year'])
-                .value();
-    return ascend.reverse();
   }
 
 }

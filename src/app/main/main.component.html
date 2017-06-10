@@ -11,7 +11,7 @@
 
   <!--<canvas></canvas>-->
 
-  <ng-container *ngFor="let project of projects">
+  <ng-container *ngFor="let project of projects | async">
     <div [id]=project.id (mouseenter)="opacityToZero($event)" (mouseleave)="opacityToOne()" class="project">
 
       <!--<h5 class="project__title">{{project.name}}</h5>-->
