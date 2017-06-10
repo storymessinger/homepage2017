@@ -21,7 +21,8 @@ body {
 // to solve ios horizontal scroll issue
 body {
         overflow: hidden;
-        overflow-y: auto;
+        overflow-y: scroll; /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch;
 }
 
 // font sizes
