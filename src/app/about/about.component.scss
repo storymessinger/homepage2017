@@ -1,7 +1,82 @@
-.introTitle {
-    font-family: 'merriweather';
-    // font-family: 'inconsolta';
-    font-size: 3.5rem;
-    font-style: italic;
+.intro {
     opacity:0;
+    margin: 0 3%;
+}
+.intro__title {
+    font-family: 'Calligraffitti';
+    // font-family: 'merriweather';
+    font-size: 2.2rem;
+    // font-style: italic;
+    line-height: 1.4;
+    margin:0;
+}
+
+.intro__address {
+    margin:0;
+    ul {
+        font-family: 'inconsolata';
+        display: inline-block;
+        padding:1.5rem 3rem 0 0;
+        list-style: none;
+        font-size: 0.71rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .intro__title {
+        font-size: 2.7rem;
+    }
+}
+@media (min-width: 999px) {
+    .intro__title {
+        margin-left:200px;
+        width: 800px;
+    }
+    .intro__address {
+        margin-left:200px;
+    }
+}
+
+
+
+// #parallaxContainer {
+//     position: absolute;
+//     width:100%;
+//     top:0;
+// }
+
+.layer {
+    width:100%;
+    height:800px;
+    position:relative;
+    border:1px solid black;
+}
+.layer__title {
+    position: absolute;
+    left: 30px;
+    bottom: 200px;
+    z-index:1001;
+    // font-family: 'inconsolata';
+    // font-family: 'Calligraffitti';
+    font-family: 'merriweather';
+    font-size: 1.5rem;
+}
+.imgbox {
+
+}
+
+.parallax01 {
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    img {
+        width:100%;
+    }
+}
+.layer4 {
+    width:100%;
+    height:2000px;
+    background-color: rgba(0,0,180,0.5);
 }
