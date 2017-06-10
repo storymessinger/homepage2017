@@ -36,11 +36,18 @@ module.exports = function(grunt) {
                 files: [
                     // Partners, Downloads, Project, Publication 제외
                     {
-                        // Issues
+                        // Primorse
                         expand:true,
                         src: ['*.{jpg,gif,png}'],
                         cwd: 'src/assets/Projects/2014_Primrose/img/original/', 
                         dest: 'src/assets/Projects/2014_Primrose/img/', 
+                    },
+                    {
+                        // SoundCloud 
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2014_SoundCloudProject/img/original/', 
+                        dest: 'src/assets/Projects/2014_SoundCloudProject/img/', 
                     },
                     // {
                     //     // Lifes

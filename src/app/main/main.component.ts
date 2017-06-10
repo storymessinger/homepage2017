@@ -43,11 +43,15 @@ export class MainComponent implements OnInit {
       id: 2,
       list: [
         { projectId: 2,
-          img: "./../../assets/test.jpg",
+          img: "./../../assets/Projects/2014_SoundCloudProject/img/pic01-small.jpg", 
           color: "#1D66FF"
          },
         { projectId: 2,
-          img: "./../../assets/test.jpg",
+          img: "./../../assets/Projects/2014_SoundCloudProject/img/pic02-small.jpg", 
+          color: "#1D66FF"
+         },
+        { projectId: 2,
+          img: "./../../assets/Projects/2014_SoundCloudProject/img/pic03-small.jpg", 
           color: "#1D66FF"
          }
       ]
