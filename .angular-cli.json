@@ -26,7 +26,7 @@
         "../node_modules/gsap/src/minified/TimelineLite.min.js",
         "../node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js",
         "../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
-        "../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
+        "../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
