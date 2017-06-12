@@ -1,3 +1,4 @@
+import { JournalComponent } from './journal/journal.component';
 import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 import { IntroComponent } from './intro/intro.component';
@@ -15,6 +16,10 @@ const APP_ROUTES: Routes = [
     {
         path: 'about',
         component: AboutComponent 
+    },
+    {
+        path: 'journal',
+        component: JournalComponent 
     }
     // {
     //     path: 'main',

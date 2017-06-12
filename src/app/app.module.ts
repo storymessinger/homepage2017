@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { AboutComponent } from './about/about.component';
+import { JournalComponent } from './journal/journal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './about/about.component';
     AppHeaderComponent,
     IntroComponent,
     MainComponent,
-    AboutComponent
+    AboutComponent,
+    JournalComponent
   ],
   imports: [
     BrowserModule,

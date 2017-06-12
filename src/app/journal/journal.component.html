@@ -1,0 +1,6 @@
+<ul class="list">
+  <li class="post" *ngFor="let journal of journals | async" >
+    <a routerLink="" class="post__title link">{{journal.title}} <span class="post__date">{{journal.date}}</span></a>
+    <p class="post__sub">{{journal.subtitle}}</p>
+  </li>
+</ul>

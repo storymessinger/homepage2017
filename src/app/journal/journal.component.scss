@@ -1,0 +1,62 @@
+.list { 
+    font-family: "Merriweather";
+    padding: 0;
+    li {
+        list-style: none;
+        margin-bottom: 1.3rem;
+    }
+    p, span { margin: 0 }
+}
+
+.post__title {
+    font-size:1.3rem;
+}
+.post__date {
+    font-family: "inconsolata";
+    font-size:0.81rem;
+}
+
+.post__sub {
+    max-width: 66%;
+    font-size:0.81rem;
+    color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 999px) {
+    .list {
+        margin-left: 200px;
+    }
+}
+
+
+$underlineColor: #2f2f2f;
+$underlineHeight: 0%;
+
+.link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: $underlineHeight;
+    left: 0;
+    bottom: 0;
+    background-color: $underlineColor;
+    transition: all ease 0.3s;
+  }
+  
+  &:hover {
+    color: white;
+    
+    &::after {
+      height: 100%;
+    }
+  }
+}

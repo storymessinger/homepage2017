@@ -1,5 +1,57 @@
 {
-    "journal":{
+    "journals":{
+            "1" : {
+            "id" : 1,
+            "date": "20150607",
+            "title" : "This is Title",
+            "subtitle":"this is sub",
+            "tag" : ["design", "app", "jiyoun"],
+            "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
+            "mainimg" : "./../../assets/test02.jpg",
+            "img" : [
+                "",
+                ""
+            ]
+        },
+            "2" : {
+            "id" : 2,
+            "date": "20160117",
+            "title" : "This is Second Title",
+            "subtitle":"this is sub",
+            "tag" : ["design", "jiyoun", "KAIST"],
+            "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
+            "mainimg" : "./../../assets/test02.jpg",
+            "img" : [
+                "",
+                ""
+            ]
+        },
+            "3" : {
+            "id" : 3,
+            "date": "20150607",
+            "title" : "This is Title",
+            "subtitle":"this is sub",
+            "tag" : ["design", "app", "jiyoun"],
+            "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
+            "mainimg" : "./../../assets/test02.jpg",
+            "img" : [
+                "",
+                ""
+            ]
+        },
+            "4" : {
+            "id" : 4,
+            "date": "20160117",
+            "title" : "This is Second Title",
+            "subtitle":"this is sub",
+            "tag" : ["design", "jiyoun", "KAIST"],
+            "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
+            "mainimg" : "./../../assets/test02.jpg",
+            "img" : [
+                "",
+                ""
+            ]
+        }
 
     },
     "projects": {
