@@ -22,6 +22,7 @@
         "styles.scss"
       ],
       "scripts": [
+        "../node_modules/p5/lib/p5.min.js",
         "../node_modules/gsap/src/minified/TweenLite.min.js",
         "../node_modules/gsap/src/minified/TimelineLite.min.js",
         "../node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js",
