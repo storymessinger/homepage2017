@@ -55,6 +55,123 @@
 
     },
     "projects": {
+        "ChurrosPrinter": {
+            "name": "Churros Printer : Food Frying Machine",
+            "year": 2016,
+            "month":8,
+            "id": 10,
+            "list": [
+            { "projectId": 10,
+                "smallimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic01-big.jpg", 
+                "color": "#d6d6d6"
+                },
+            { "projectId": 10,
+                "smallimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic02-big.jpg", 
+                "color": "#d6d6d6"
+                },
+            { "projectId": 10,
+                "smallimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic03-big.jpg", 
+                "color": "#d6d6d6"
+                },
+            { "projectId": 10,
+                "smallimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic04-big.jpg", 
+                "color": "#d6d6d6"
+                },
+            { "projectId": 10,
+                "smallimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic05-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_ChurrosPrinter/img/pic05-big.jpg", 
+                "color": "#d6d6d6"
+                }
+            ]
+        },
+        "iRoboIdentity": {
+            "name": "iRobo Identity Design",
+            "year": 2015,
+            "month":8,
+            "id": 9,
+            "list": [
+            { "projectId": 9,
+                "smallimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic01-big.jpg", 
+                "color": "#3d6fb7"
+                },
+            { "projectId": 9,
+                "smallimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic02-big.jpg", 
+                "color": "#3d6fb7"
+                },
+            { "projectId": 9,
+                "smallimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic03-big.jpg", 
+                "color": "#3d6fb7"
+                },
+            { "projectId": 9,
+                "smallimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2015_iRoboIdentity/img/pic04-big.jpg", 
+                "color": "#3d6fb7"
+                }
+            ]
+        },
+        "StartupKaistLogo": {
+            "name": "Startup KAIST Identity Design",
+            "year": 2016,
+            "month":5,
+            "id": 8,
+            "list": [
+            { "projectId": 8,
+                "smallimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic01-big.jpg", 
+                "color": "#f26a6d"
+                },
+            { "projectId": 8,
+                "smallimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic02-big.jpg", 
+                "color": "#f26a6d"
+                },
+            { "projectId": 8,
+                "smallimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_StartupKaistLogo/img/pic03-big.jpg", 
+                "color": "#f26a6d"
+                }
+            ]
+        },
+        "MusicalTrain": {
+            "name": "Musical Train : IKEA-Hack for Children to play with music",
+            "year": 2016,
+            "month":6,
+            "id": 7,
+            "list": [
+            { "projectId": 7,
+                "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic01-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic01-big.jpg", 
+                "color": "#ffbf53"
+                },
+            { "projectId": 7,
+                "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic02-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic02-big.jpg", 
+                "color": "#ffbf53"
+                },
+            { "projectId": 7,
+                "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic03-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic03-big.jpg", 
+                "color": "#ffbf53"
+                },
+            { "projectId": 7,
+                "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic04-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic04-big.jpg", 
+                "color": "#ffbf53"
+                },
+            { "projectId": 7,
+                "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic05-small.jpg", 
+                "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic05-big.jpg", 
+                "color": "#ffbf53"
+                }
+            ]
+        },
         "ConsumerToCreator": {
             "name": "Consumer to Creator(CHI 16', 3rd author)",
             "year": 2016,

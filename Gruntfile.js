@@ -77,6 +77,34 @@ module.exports = function(grunt) {
                         cwd: 'src/assets/Projects/2014_FirstSnow/img/original/', 
                         dest: 'src/assets/Projects/2014_FirstSnow/img/', 
                     },
+                    {
+                        // train 
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2016_MusicalTrain/img/original/', 
+                        dest: 'src/assets/Projects/2016_MusicalTrain/img/', 
+                    },
+                    {
+                        // startupkaist
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2016_StartupKaistLogo/img/original/', 
+                        dest: 'src/assets/Projects/2016_StartupKaistLogo/img/', 
+                    },
+                    {
+                        // iRobo 
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2015_iRoboIdentity/img/original/', 
+                        dest: 'src/assets/Projects/2015_iRoboIdentity/img/', 
+                    },
+                    {
+                        // 2016_ChurrosPrinter
+                        expand:true,
+                        src: ['*.{jpg,gif,png}'],
+                        cwd: 'src/assets/Projects/2016_ChurrosPrinter/img/original/', 
+                        dest: 'src/assets/Projects/2016_ChurrosPrinter/img/', 
+                    },
                 ]
             }
         
