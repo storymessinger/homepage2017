@@ -1,0 +1,53 @@
+.post {
+    position: relative;
+    margin-top: 140px;
+    padding: 0 5%;
+    overflow-x:hidden;
+}
+
+// .image__main {
+//     margin-left:-5%;
+//     width: 100vw;
+//     img {
+//         z-index:9999;
+//         width:100%;
+//     }
+// }
+
+header {
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-family: "Merriweather";
+}
+.title__title {
+    font-size: 2.5rem;
+}
+.title__tag {
+    font-size: 0.81rem;
+}
+
+
+@media (min-width: 415px) {
+}
+
+@media (min-width: 768px) {
+    // .image__main {
+    //     margin-left:-3%;
+    // }
+}
+
+@media (min-width: 1024px) {
+    // .image__main {
+        // margin-left:-5%;
+    //     width: 30vw;
+    // }
+    .post {
+        margin-left:200px;
+        width: 800px;
+    }
+}
+
+@media (min-width: 1553px) {
+}

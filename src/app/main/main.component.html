@@ -1,15 +1,4 @@
-<div class="main" >
-
-  <!--Firebase Test-->
-  <!--<h1>{{ (items | async)?.name }}</h1>-->
-  <!--<ul *ngFor="let item of items| async ">
-    <li class="text" >
-      {{item.name}}
-    </li>
-  </ul>-->
-
-
-  <!--<canvas></canvas>-->
+<div class="main container" >
 
   <ng-container *ngFor="let project of projects | async">
     <div [id]=project.id (mouseenter)="opacityToZero($event)" (mouseleave)="opacityToOne()" class="project">
@@ -31,9 +20,5 @@
 
     </div>
   </ng-container>
-
-
-  <!--2-->
-
 
 </div>

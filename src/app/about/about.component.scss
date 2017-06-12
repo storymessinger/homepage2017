@@ -1,6 +1,12 @@
+.container {
+    margin-top: 140px;
+    padding: 0 5%;
+    overflow-x:hidden;
+}
+
 .intro {
     opacity:0;
-    margin: 0 3%;
+    position: relative;
 }
 .intro__title {
     font-family: 'Calligraffitti';
@@ -22,11 +28,12 @@
     }
 }
 
-
-
 @media (min-width: 768px) {
     .intro__title {
         font-size: 2.7rem;
+    }
+    .container {
+        margin-top: 180px;
     }
 }
 @media (min-width: 999px) {
@@ -36,6 +43,9 @@
     }
     .intro__address {
         margin-left:200px;
+    }
+    .container {
+        padding: 0 3%;
     }
 }
 

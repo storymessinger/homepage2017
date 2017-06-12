@@ -6,8 +6,8 @@
             "title" : "This is Title",
             "subtitle":"this is sub",
             "tag" : ["design", "app", "jiyoun"],
-            "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
-            "mainimg" : "./../../assets/test02.jpg",
+            "body" : "<p>I am opening my first homepage today.</p> <p>It is quite far from finish, but I think it is reasonably ok for people to understand my work.</p><p>Their are couple of things which is in progress for this homepage.</p><ul><li>introduction page (p5js)</li><li>individual pages for each of the projects</li><li>portfolio projects update</li><li>About page update &amp; finish</li><li>Background movement (p5js)</li></ul><p>After this work, it will be finally be called ver 1.0</p>",
+            "mainimg" : "./../../assets/test.jpg",
             "img" : [
                 "",
                 ""
@@ -20,7 +20,7 @@
             "subtitle":"this is sub",
             "tag" : ["design", "jiyoun", "KAIST"],
             "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
-            "mainimg" : "./../../assets/test02.jpg",
+            "mainimg" : "",
             "img" : [
                 "",
                 ""
@@ -33,7 +33,7 @@
             "subtitle":"this is sub",
             "tag" : ["design", "app", "jiyoun"],
             "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
-            "mainimg" : "./../../assets/test02.jpg",
+            "mainimg" : "",
             "img" : [
                 "",
                 ""
@@ -46,7 +46,7 @@
             "subtitle":"this is sub",
             "tag" : ["design", "jiyoun", "KAIST"],
             "body" : "<p>fdsd<br>dfadsfsfkjfsi<br>dfasdfdsfadsf<br>sdf<br>sdf<br>asdfsdf </p><p>this is tseting</p>",
-            "mainimg" : "./../../assets/test02.jpg",
+            "mainimg" : "",
             "img" : [
                 "",
                 ""

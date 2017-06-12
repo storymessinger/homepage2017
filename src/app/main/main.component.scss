@@ -1,3 +1,9 @@
+.container {
+    margin: 140px 5% 0 5%; 
+    margin-right: calc(5% - 20px);
+    overflow-x:hidden;
+}
+
 .main {
     position: relative;
 }
@@ -76,6 +82,14 @@ canvas {
     .project__img, .project__spacer {
         width: calc(16.666666% - 15px);
     }
+
+    .container {
+        margin: 180px 3% 0 3%;
+        margin-right: calc(3% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
 }
 
 @media (min-width: 1024px) {

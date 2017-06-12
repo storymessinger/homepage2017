@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { AboutComponent } from './about/about.component';
 import { JournalComponent } from './journal/journal.component';
+import { JournalPostComponent } from './journal-post/journal-post.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { JournalComponent } from './journal/journal.component';
     IntroComponent,
     MainComponent,
     AboutComponent,
-    JournalComponent
+    JournalComponent,
+    JournalPostComponent
   ],
   imports: [
     BrowserModule,

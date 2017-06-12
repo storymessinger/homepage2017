@@ -1,4 +1,10 @@
-.list { 
+.container { 
+    position: relative;
+    margin: 140px 5% 0 5%;
+    overflow-x:hidden;
+}
+
+.list {
     font-family: "Merriweather";
     padding: 0;
     li {
@@ -22,11 +28,23 @@
     color: rgba(0,0,0,0.3);
 }
 
-@media (min-width: 999px) {
+@media (min-width: 768px) {
     .list {
-        margin-left: 200px;
+        margin: 180px 3% 0 3%;
     }
 }
+
+@media (min-width: 999px) {
+    .container {
+        margin-left: calc(3% + 200px);
+    }
+}
+
+
+
+
+
+
 
 
 $underlineColor: #2f2f2f;

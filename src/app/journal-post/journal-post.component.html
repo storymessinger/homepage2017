@@ -1,0 +1,21 @@
+<div class="post" *ngFor="let p of post | async" >
+
+  <div class="image__main">
+    <img [src]="p.mainimg">
+  </div>
+
+<div></div>
+  <header>
+    <h1 class="title title__title">Start of my homepage journal</h1>
+    <p class="title title__tag">{{p.tag}}</p>
+  </header>
+
+  <section [innerHTML]="p.body" class="writing">
+  </section>
+
+  <div class="image__sub">
+    <img src="">
+  </div>
+
+
+</div>

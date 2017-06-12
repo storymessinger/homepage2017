@@ -30,12 +30,12 @@ export class AppHeaderComponent implements OnInit {
     if (this.selectProject== true) {
       boxWidth = 2;
     } else {
-      boxWidth = 3;
+      boxWidth = 2;
     }
 
     // get the iMax
-    const xMax = Math.floor(context.canvas.width / 50);
-    const yMax = Math.floor(context.canvas.height / 50);
+    const xMax = Math.floor(context.canvas.width / 25);
+    const yMax = Math.floor(context.canvas.height / 25);
 
     for(let j=0; j <= yMax; j++) {
       for(let i=0; i <= xMax; i++) {
@@ -45,7 +45,7 @@ export class AppHeaderComponent implements OnInit {
         // random? color
         context.fillStyle = randomColor;
         // dedicated position
-        context.fillRect(50*i,50*j,boxWidth,boxWidth);
+        context.fillRect(25*i,25*j,boxWidth,boxWidth);
       }
     }
 
