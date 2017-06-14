@@ -15,7 +15,7 @@ export class AppHeaderComponent implements OnInit {
 
   ngOnInit() {
     // this.canvasDrawing(this.selectProject);
-    TweenLite.ticker.addEventListener("tick",this.canvasDrawing);
+    // TweenLite.ticker.addEventListener("tick",this.canvasDrawing);
   }
 
 
