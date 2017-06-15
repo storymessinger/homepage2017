@@ -1,0 +1,67 @@
+.post {
+    height: 100vh;
+
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.post__img {
+    width: 40vw;
+    height: 53vw;
+
+    position: relative;
+    overflow:hidden;
+
+    img {
+        // filter:brightness(2.5);
+        position: absolute;    
+        left: 50%;    
+        top: 50%;    
+        transform: translate(-50%,-50%);
+        width: 75vw;
+    }
+}
+
+.post__title {
+    font-family: "Merriweather";
+    color:white;
+    position: absolute;
+    font-size: 3rem;
+}
+
+
+@media (min-width: 768px) {
+    .post__img {
+        width: 36vw;
+        height: 48vw;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .post__img {
+        width: 30vw;
+        height: 40vw;
+    }
+    .post__title {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1553px) {
+    .post__img {
+        width: 24vw;
+        height: 32vw;
+    }
+}
+
+@media (min-width: 1777px) {
+    .post__img {
+        width: 20vw;
+        height: 28vw;
+    }
+}

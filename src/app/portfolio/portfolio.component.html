@@ -1,0 +1,12 @@
+<section>
+  <div *ngFor="let p of portfolio" class="post" [ngStyle]="{'background-color': p.list[0].color}">
+    <div class="post__img">
+      <img [src]="p.list[0].bigimg">
+    </div>
+    <div class="post__title">
+      <h1>{{p.name}}</h1>
+
+    </div>
+  </div>
+
+</section>

@@ -255,12 +255,12 @@
             { "projectId": 3,
                 "smallimg": "./../../assets/Projects/2014_FirstSnow/img/pic01-small.jpg", 
                 "bigimg": "./../../assets/Projects/2014_FirstSnow/img/pic01-big.jpg", 
-                "color": "#8293e6"
+                "color": "rgba(215, 215, 215, 0.81)"
                 },
             { "projectId": 3,
                 "smallimg": "./../../assets/Projects/2014_FirstSnow/img/pic02-small.jpg", 
                 "bigimg": "./../../assets/Projects/2014_FirstSnow/img/pic02-big.jpg", 
-                "color": "#8293e6"
+                "color": "rgba(215, 215, 215, 0.81)"
                 }
             ]
         },

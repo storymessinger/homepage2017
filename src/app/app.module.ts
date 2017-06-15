@@ -15,6 +15,7 @@ import { environment } from '../environments/environment';
 import { AboutComponent } from './about/about.component';
 import { JournalComponent } from './journal/journal.component';
 import { JournalPostComponent } from './journal-post/journal-post.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { JournalPostComponent } from './journal-post/journal-post.component';
     MainComponent,
     AboutComponent,
     JournalComponent,
-    JournalPostComponent
+    JournalPostComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
