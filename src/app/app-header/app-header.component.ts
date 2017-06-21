@@ -10,16 +10,19 @@ declare var p5, TimelineMax, TweenMax, Power4;
 export class AppHeaderComponent implements OnInit {
 
   @Input() selectProject;
+  click = false;;
+
 
   constructor() { }
 
+
   ngOnInit() {
+    let self = this;
     // this.canvasDrawing(this.selectProject);
     // TweenLite.ticker.addEventListener("tick",this.canvasDrawing);
     var sketch = function( p ) {
 
       let eye;
-      let count = 3;
 
       p.setup = function() {
         let myCanvas = p.createCanvas(100,100);
@@ -29,8 +32,10 @@ export class AppHeaderComponent implements OnInit {
       };
 
       p.draw = function() {
-        eye.update(count);
+        console.log(self.click);
+        eye.update(self.click);
         eye.render();
+        self.click = false;
       };
 
 
@@ -48,19 +53,31 @@ export class AppHeaderComponent implements OnInit {
 
         white_eye = { y: 0, eyebrow: 0 };
         former_count = 0;
+
+        setEyebrows;
+
+        blinked = true;
         
         constructor() {
           // p.fill(this.black);
           p.noStroke();
           // p.ellipse(this.R, this.R, this.R_black );
-          const setEyebrows = new TimelineMax()
+          this.setEyebrows = new TimelineMax({paused:true})
             .to( this.white_eye, 1.5, { y: this.R * (3/5), eyebrow: this.R*(1/15), ease: Power4.easeOut } )
-            .to( this.white_eye, 2, { y: 0 , eyebrow: 0, ease: Power4.easeIn} );
-          setEyebrows.repeat(-1).yoyo(true).repeatDelay(8).play();
+            .to( this.white_eye, 2, { y: 0 , eyebrow: 0, ease: Power4.easeIn } );
+          // this.setEyebrows.repeat(-1).yoyo(true).repeatDelay(8).play();
+          this.setEyebrows.play();
         }
 
-        update(count) {
 
+        blink(){
+          this.setEyebrows.restart();
+        }
+
+        update(clicked) {
+          if (clicked && this.blinked) {
+            this.blink();
+          }
         }
 
         render() {
@@ -81,6 +98,10 @@ export class AppHeaderComponent implements OnInit {
       }
     };
     let myp5 = new p5(sketch);
+  }
+
+  iClick(){
+    this.click = true;
   }
 
 
