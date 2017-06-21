@@ -4,13 +4,13 @@
     src: url('./assets/font/AHAMONO-Monospaced.otf');
     // url('Thonburi-Bold.eot'); /* IE */
 }
-@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Inconsolata|Merriweather:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Nova+Mono|Merriweather:400,400i,700,700i');
 
 html {
     background-color: #dddddd;
     min-height: 100vh;
     // font-family: AHAMONO-Monospaced;
-    font-family: 'Inconsolata','Merriweather','Calligraffitti';
+    font-family: 'Nova Mono','Merriweather','Calligraffitti';
     color: '#f1f1f1';
 }
 

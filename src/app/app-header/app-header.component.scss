@@ -3,8 +3,7 @@ header {
     top: 0;
     width:100%;
     z-index:1001;
-    font-family:'Merriweather';
-    font-style: italic;
+    font-family:'Nova Mono';
 }
 
 .header--content {
@@ -36,6 +35,13 @@ h3, ul, a {
     }
 }
 
+#myContainer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 8%;
+}
+
 canvas {
     opacity:0.7;
 
@@ -62,7 +68,8 @@ canvas {
 //     background-color: green;
 // }
 
-$underlineColor: #00B388;
+// $underlineColor: #00B388;
+$underlineColor: #222222;
 $underlineHeight: 5%;
 
 .link-1 {

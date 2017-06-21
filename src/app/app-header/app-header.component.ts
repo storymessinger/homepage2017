@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import 'gsap';
 declare var TweenLite, Power2:any;
+declare var p5, TimelineMax, TweenMax, Power4;
 
 @Component({
   selector: 'app-header',
@@ -16,6 +16,71 @@ export class AppHeaderComponent implements OnInit {
   ngOnInit() {
     // this.canvasDrawing(this.selectProject);
     // TweenLite.ticker.addEventListener("tick",this.canvasDrawing);
+    var sketch = function( p ) {
+
+      let eye;
+      let count = 3;
+
+      p.setup = function() {
+        let myCanvas = p.createCanvas(100,100);
+        // myCanvas.background(200);
+        myCanvas.parent('myContainer');
+        eye = new Eye();
+      };
+
+      p.draw = function() {
+        eye.update(count);
+        eye.render();
+      };
+
+
+      class Eye {
+        R = p.width ;
+        R_black = 2*this.R * 1/2;
+        R_red = 2*this.R * 3/8;
+
+        black = p.color(0,0,0);
+        // red = p.color(250, 48, 48);
+        // darkred = p.color(168, 4, 4);
+        grey = p.color(80, 80, 80);
+        darkgrey = p.color(160, 160, 160);
+        white = p.color(255,255,255);
+
+        white_eye = { y: 0, eyebrow: 0 };
+        former_count = 0;
+        
+        constructor() {
+          // p.fill(this.black);
+          p.noStroke();
+          // p.ellipse(this.R, this.R, this.R_black );
+          const setEyebrows = new TimelineMax()
+            .to( this.white_eye, 1.5, { y: this.R * (3/5), eyebrow: this.R*(1/15), ease: Power4.easeOut } )
+            .to( this.white_eye, 2, { y: 0 , eyebrow: 0, ease: Power4.easeIn} );
+          setEyebrows.repeat(-1).yoyo(true).repeatDelay(8).play();
+        }
+
+        update(count) {
+
+        }
+
+        render() {
+
+          let R_white= this.white_eye.y;
+          let R_eyebrow = this.white_eye.eyebrow;
+
+          p.fill(this.grey);
+          p.ellipse(this.R/2, this.R/2, this.R_red );
+
+          p.fill(this.darkgrey);
+          p.ellipse(this.R/2,this.R/2, this.R_red, R_white+R_eyebrow);
+          p.fill(this.white);
+          p.ellipse(this.R/2, this.R/2, this.R_red-2, R_white);
+          p.fill(this.black);
+          p.ellipse(this.R/2, this.R/2, this.R*(1/25), R_white);
+        }
+      }
+    };
+    let myp5 = new p5(sketch);
   }
 
 
