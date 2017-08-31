@@ -1,11 +1,13 @@
+import { ProjectsService } from './services/projects.service';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { Routing } from './app.routing';
+import { routerConfig } from './app.routing';
 import { IntroComponent } from './intro/intro.component';
 import { MainComponent } from './main/main.component';
 
@@ -16,6 +18,8 @@ import { AboutComponent } from './about/about.component';
 import { JournalComponent } from './journal/journal.component';
 import { JournalPostComponent } from './journal-post/journal-post.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -26,17 +30,21 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutComponent,
     JournalComponent,
     JournalPostComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectDetailComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    Routing,
+    RouterModule.forRoot(routerConfig),
     AngularFireModule.initializeApp(environment.firebase, 'app-firebase'),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [
+    ProjectsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

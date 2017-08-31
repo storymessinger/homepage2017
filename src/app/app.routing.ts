@@ -6,7 +6,7 @@ import { IntroComponent } from './intro/intro.component';
 import { Routes, RouterModule } from "@angular/router";
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
-const APP_ROUTES: Routes = [
+export const routerConfig: Routes = [
     { 
         path: '', 
         redirectTo: 'main',
@@ -15,6 +15,7 @@ const APP_ROUTES: Routes = [
     { 
         path: 'intro', 
         component: IntroComponent
+
     },
     {
         path: 'portfolio',
@@ -43,6 +44,5 @@ const APP_ROUTES: Routes = [
     // },
 ];
 
-export const Routing = RouterModule.forRoot(APP_ROUTES);
 
 

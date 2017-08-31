@@ -32,7 +32,7 @@ export class AppHeaderComponent implements OnInit {
       };
 
       p.draw = function() {
-        console.log(self.click);
+        // console.log(self.click);
         eye.update(self.click);
         eye.render();
         self.click = false;

@@ -25,6 +25,7 @@ export class MainComponent implements OnInit {
   opacityToZero(event) {
     this.isOpacity = false;
     this.id = event.target.id;
+    console.log(event.target.key);
   }
   opacityToOne() {
     this.isOpacity = true;

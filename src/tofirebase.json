@@ -55,8 +55,10 @@
 
     },
     "projects": {
-        "ChurrosPrinter": {
+        "10": {
             "name": "Churros Printer : Food Frying Machine",
+            "description": "",
+            "url": "ChurrosPrinter",
             "year": 2016,
             "month":8,
             "id": 10,
@@ -88,8 +90,10 @@
                 }
             ]
         },
-        "iRoboIdentity": {
+        "9": {
             "name": "iRobo Identity Design",
+            "description": "",
+            "url": "iRoboIdentity",
             "year": 2015,
             "month":8,
             "id": 9,
@@ -116,8 +120,10 @@
                 }
             ]
         },
-        "StartupKaistLogo": {
+        "8": {
             "name": "Startup KAIST Identity Design",
+            "description": "",
+            "url": "StartupKaistLogo",
             "year": 2016,
             "month":5,
             "id": 8,
@@ -139,8 +145,10 @@
                 }
             ]
         },
-        "MusicalTrain": {
+        "7": {
             "name": "Musical Train : IKEA-Hack for Children to play with music",
+            "description": "",
+            "url": "MusicalTrain",
             "year": 2016,
             "month":6,
             "id": 7,
@@ -172,8 +180,10 @@
                 }
             ]
         },
-        "ConsumerToCreator": {
+        "6": {
             "name": "Consumer to Creator(CHI 16', 3rd author)",
+            "description": "",
+            "url": "ConsumerToCreator",
             "year": 2016,
             "month":10,
             "id": 6,
@@ -195,8 +205,10 @@
                 }
             ]
         },
-        "BanBan": {
+        "5": {
             "name": "BanBan App Project (Naver UXDP)",
+            "description": "",
+            "url": "BanBan",
             "year": 2015,
             "month":6,
             "id": 5,
@@ -223,8 +235,10 @@
                 }
             ]
         },
-        "CatShelter": {
+        "4": {
             "name": "CatShelter Concept",
+            "description": "",
+            "url": "CatShelter",
             "year": 2015,
             "month":5,
             "id": 4,
@@ -246,8 +260,10 @@
                 }
             ]
         },
-        "FirstSnow": {
+        "3": {
             "name": "First Snow Art Project",
+            "description": "",
+            "url": "FirstSnow",
             "year": 2014,
             "month":12,
             "id": 3,
@@ -265,8 +281,10 @@
             ]
         },
 
-        "SoundCloud": {
+        "2": {
             "name": "SoundCloud Redesign Project",
+            "description": "",
+            "url": "SoundCloud",
             "year": 2014,
             "month":11,
             "id": 2,
@@ -293,8 +311,10 @@
                 }
             ]
         },
-    "Primrose": {
+    "1": {
             "name": "Primrose",
+            "description": "",
+            "url": "Primrose",
             "year": 2014,
             "month":11,
             "id": 1,
