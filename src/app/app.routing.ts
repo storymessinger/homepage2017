@@ -1,3 +1,5 @@
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { JournalComponent } from './journal/journal.component';
 import { JournalPostComponent } from './journal-post/journal-post.component';
 import { AboutComponent } from './about/about.component';
@@ -15,7 +17,6 @@ export const routerConfig: Routes = [
     { 
         path: 'intro', 
         component: IntroComponent
-
     },
     {
         path: 'portfolio',
@@ -36,7 +37,18 @@ export const routerConfig: Routes = [
     {
         path: 'post/:id',
         component: JournalPostComponent
+    },
+    {
+        path: 'projects/:id',
+        component: ProjectDetailComponent
+    },
+    {
+        path: 'projects',
+        component: ProjectsComponent,
+        pathMatch: 'full'
     }
+
+
     // {
     //     path: 'main',
     //     redirectTo: 'home',
