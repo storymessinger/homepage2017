@@ -9,6 +9,8 @@ export class BColorService {
 
   getColor(color) {
     this.bColor = color;
+    console.log(this.bColor);
   }
+
 
 }

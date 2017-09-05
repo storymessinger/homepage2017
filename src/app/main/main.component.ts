@@ -1,3 +1,4 @@
+import { BColorService } from './../services/b-color.service';
 import { Component, OnInit} from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
 import {Observable} from 'rxjs/Observable';
@@ -15,17 +16,22 @@ export class MainComponent implements OnInit {
   private id:number;
   projects:any;
 
-  constructor(db: AngularFireDatabase) { 
+  constructor(db: AngularFireDatabase, private bColorService:BColorService) { 
     this.projects = db.list('/projects')
       .map(item => item.sort((a,b) => b['year'] - a['year'] || b['month'] - a['month']));
+
   }
 
   ngOnInit() {
   }
+
+  sendColor(color){
+    this.bColorService.getColor(color);
+  }
+
   opacityToZero(event) {
     this.isOpacity = false;
     this.id = event.target.id;
-    console.log(event.target.key);
   }
   opacityToOne() {
     this.isOpacity = true;

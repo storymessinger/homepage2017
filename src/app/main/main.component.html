@@ -7,7 +7,7 @@
 
       <div *ngFor="let item of project.list; let i = index" class="project__img" [ngStyle]="{'background-color': item.color}">
 
-        <div class="project__img__container" [routerLink]='["/projects", item.projectId]'>
+        <div class="project__img__container" [routerLink]='["/projects", item.projectId]' (click)='sendColor(item.color)'>
           <!--<img [ngClass]="{'hide':isOpacity__01 == 0 }" src="./../../assets/test.jpg">-->
           <!--<img [ngStyle]="{'opacity': opacityTo() }" src="./../../assets/test.jpg">-->
           <img [ngClass]="{'hide': isOpacity == 0 && opacityTo() != item.projectId }" [src]="item.smallimg">
