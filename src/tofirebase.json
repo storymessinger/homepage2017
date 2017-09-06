@@ -156,27 +156,27 @@
             { "projectId": 7,
                 "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic01-small.jpg", 
                 "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic01-big.jpg", 
-                "color": "#ffbf53"
+                "color": "rgba(250, 200, 125, 1)"
                 },
             { "projectId": 7,
                 "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic02-small.jpg", 
                 "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic02-big.jpg", 
-                "color": "#ffbf53"
+                "color": "rgba(250, 200, 125, 1)"
                 },
             { "projectId": 7,
                 "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic03-small.jpg", 
                 "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic03-big.jpg", 
-                "color": "#ffbf53"
+                "color": "rgba(250, 200, 125, 1)"
                 },
             { "projectId": 7,
                 "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic04-small.jpg", 
                 "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic04-big.jpg", 
-                "color": "#ffbf53"
+                "color": "rgba(250, 200, 125, 1)"
                 },
             { "projectId": 7,
                 "smallimg": "./../../assets/Projects/2016_MusicalTrain/img/pic05-small.jpg", 
                 "bigimg": "./../../assets/Projects/2016_MusicalTrain/img/pic05-big.jpg", 
-                "color": "#ffbf53"
+                "color": "rgba(250, 200, 125, 1)"
                 }
             ]
         },

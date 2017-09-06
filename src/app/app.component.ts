@@ -1,19 +1,23 @@
+import { Observable } from 'rxjs/Rx';
 import { BColorService } from './services/b-color.service';
-import { Component,  } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  bColor:string;
+  private bColor$:Observable<string>;
 
   constructor(private bColorService:BColorService){
 
-    this.bColor = this.bColorService.bColor;
+  }
 
+  ngOnInit() {
+    this.bColor$ = this.bColorService.color$
+      .do( color => console.log(color));
   }
 
 

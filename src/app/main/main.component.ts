@@ -1,8 +1,9 @@
+import { Project } from '../shared/model/project';
+import { ProjectsService } from '../services/projects.service';
 import { BColorService } from './../services/b-color.service';
 import { Component, OnInit} from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-main',
@@ -14,15 +15,15 @@ export class MainComponent implements OnInit {
 
   private isOpacity:any;
   private id:number;
-  projects:any;
+  private projects$:Observable<Project[]>;
 
-  constructor(db: AngularFireDatabase, private bColorService:BColorService) { 
-    this.projects = db.list('/projects')
-      .map(item => item.sort((a,b) => b['year'] - a['year'] || b['month'] - a['month']));
 
+  constructor(private bColorService:BColorService, private projectService:ProjectsService) { 
   }
 
   ngOnInit() {
+    this.bColorService.getColor('#dddddd');
+    this.projects$ = this.projectService.findAllProjects();
   }
 
   sendColor(color){
