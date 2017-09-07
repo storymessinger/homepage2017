@@ -1,4 +1,6 @@
+<div id="background"></div>
 <div class="main container" >
+  <!--<canvas id="canvas"></canvas>-->
 
   <ng-container *ngFor="let project of projects$ | async">
     <div [id]=project.id (mouseenter)="opacityToZero($event)" (mouseleave)="opacityToOne()" class="project">

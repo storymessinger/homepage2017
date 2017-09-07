@@ -57,27 +57,74 @@
 // }
 
 .layer {
-    height:800px;
+    height:100vh;
     position:relative;
-    border:1px solid black;
+
 }
+
+.myDesignLab {
+    background: -moz-linear-gradient(top, #dddddd 0%, #f3a763 80%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #dddddd 0%,#f3a763 80%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #dddddd 0%,#f3a763 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f3a763',GradientType=0 ); /* IE6-9 */
+}
+
+// .idKAIST{
+//     background: -moz-linear-gradient(top, #f3a763 0%, #dddddd 80%); /* FF3.6-15 */
+//     background: -webkit-linear-gradient(top, #f3a763 0%,#dddddd 80%); /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(to bottom, #f3a763 0%,#dddddd 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a763', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+// }
+
 .layer__title {
     position: absolute;
-    left: 30px;
-    bottom: 200px;
-    z-index:1001;
-    font-family: 'PT+Mono';
-    font-size: 1.5rem;
+    left: 5%;
+    top: 25%;
+    z-index:10;
+    font-size: 1.2rem;
 }
-.imgbox {
 
+.layer__parallax {
+    margin:auto;
+    width: 100%;
+    position: relative;
+}
+
+.parallax {
+    position: absolute;
+    img {
+        width: 100%;
+    }
 }
 
 .parallax01 {
-    position: absolute;
-    background-color: blue;
-    width: 200px;
-    img {
-        width:100%;
+    width: 40%;
+    z-index: 5;
+}
+
+.parallax02 {
+    padding-left: 30%;
+    width: 30%;
+    z-index: 3;
+}
+
+.parallax03 {
+    padding-left: 50%;
+    width: 50%;
+    z-index: 4;
+}
+
+
+@media (min-width: 768px) {
+    .layer__parallax {
+        width: 80%;
     }
+
+}
+
+@media (min-width: 1024px) {
+    .layer__parallax {
+        width: 1000px;
+    }
+
 }
