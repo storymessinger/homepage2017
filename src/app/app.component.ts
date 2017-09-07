@@ -9,7 +9,7 @@ import { Component, OnInit  } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  private bColor$:Observable<string>;
+  bColor$:Observable<string>;
 
   constructor(private bColorService:BColorService){
 

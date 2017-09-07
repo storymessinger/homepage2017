@@ -12,7 +12,7 @@ import { Project } from '../shared/model/project';
 })
 export class ProjectDetailComponent implements OnInit {
 
-  private project:Project;
+  project:Project;
   id:number;
 
   descBox:Boolean = true;

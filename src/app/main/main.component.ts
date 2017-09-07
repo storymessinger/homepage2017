@@ -15,7 +15,7 @@ export class MainComponent implements OnInit {
 
   private isOpacity:any;
   private id:number;
-  private projects$:Observable<Project[]>;
+  projects$:Observable<Project[]>;
 
 
   constructor(private bColorService:BColorService, private projectService:ProjectsService) { 
