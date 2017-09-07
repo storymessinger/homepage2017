@@ -1,7 +1,18 @@
 <!--<div class="background"></div>-->
-<div class="container">
-  <h1>{{project.name}}</h1>
-  <p>
-    project-detail works!
-  </p>
-</div>
+<section class="contentSingle">
+
+  <article class="description description--close" [ngClass]='{descriptionOpen: descBox}'>
+    <p>{{project?.name}}</p>
+    <p>{{project?.description}}	SERIES AROUND THE THEME OF THE THRILLER TO SHOWCASE SHOES AND ACCESSORIES IN THE APRIL/MAY MAGAZINE MONSIEUR </p>
+  </article>
+  
+  <div class="imgs" (click)="toggleDesc()" >
+
+    <div *ngFor="let item of project.list; let i = index" class="single__img">
+      <div class="single__img__container">
+        <img [src]="item.bigimg">
+      </div>
+    </div>
+
+  </div>
+</section>

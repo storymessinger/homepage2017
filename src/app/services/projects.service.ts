@@ -16,7 +16,6 @@ export class ProjectsService {
   }
 
   findProjectById(id:number): Observable<Project[]> {
-    console.log('fuck');
 
     return this.db.list('projects', {
       query: {

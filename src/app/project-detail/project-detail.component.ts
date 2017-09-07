@@ -1,3 +1,4 @@
+import { BColorService } from '../services/b-color.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { ProjectsService } from '../services/projects.service';
@@ -14,13 +15,30 @@ export class ProjectDetailComponent implements OnInit {
   private project:Project;
   id:number;
 
-  constructor(private projectsService:ProjectsService ) { 
+  descBox:Boolean = true;
+
+  constructor(private route:ActivatedRoute, private bColorService:BColorService, private projectsService:ProjectsService ) { 
   } 
 
   ngOnInit() {
-    this.projectsService.findProjectById(10).subscribe(
-      (result) => {this.project = result[0]}
-    )
+
+    this.route.params
+      .switchMap(param => this.projectsService.findProjectById(parseInt(param['id']))
+      )
+      .subscribe(
+        (result) => {
+          this.project = result[0];
+          this.bColorService.getColor(this.project.list[0]['color']);
+        }
+      )
+  }
+
+  toggleDesc() {
+    if(this.descBox == true) {
+      this.descBox = false;
+    } else {
+      this.descBox = true;
+    }
   }
 
 }
