@@ -1,3 +1,4 @@
+import { EyeBlinkService } from './../services/eye-blink.service';
 import { BColorService } from '../services/b-color.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
@@ -15,12 +16,15 @@ export class ProjectDetailComponent implements OnInit {
   project:Project;
   id:number;
 
-  descBox:Boolean = true;
+  descBox:Boolean = false;
 
-  constructor(private route:ActivatedRoute, private bColorService:BColorService, private projectsService:ProjectsService ) { 
+  constructor(private route:ActivatedRoute, private bColorService:BColorService, private projectsService:ProjectsService, private eyeBlinkService:EyeBlinkService ) { 
   } 
 
   ngOnInit() {
+
+    // Blink once when loaded
+    this.eyeBlinkService.blink = true;
 
     this.route.params
       .switchMap(param => this.projectsService.findProjectById(parseInt(param['id']))
@@ -33,12 +37,13 @@ export class ProjectDetailComponent implements OnInit {
       )
   }
 
-  toggleDesc() {
-    if(this.descBox == true) {
-      this.descBox = false;
-    } else {
-      this.descBox = true;
-    }
+  descOn() {
+    this.descBox = true;
+    this.eyeBlinkService.blink = true;
+  }
+  descOff() {
+    console.log('out');
+    this.descBox = false;
   }
 
 }

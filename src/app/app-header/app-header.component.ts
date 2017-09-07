@@ -1,3 +1,4 @@
+import { EyeBlinkService } from './../services/eye-blink.service';
 import { Component, OnInit, Input } from '@angular/core';
 declare var TweenLite, Power2:any;
 declare var p5, TimelineMax, TweenMax, Power4;
@@ -13,7 +14,7 @@ export class AppHeaderComponent implements OnInit {
   click = false;;
 
 
-  constructor() { }
+  constructor(private eyeBlinkService:EyeBlinkService) { }
 
 
   ngOnInit() {
@@ -33,9 +34,9 @@ export class AppHeaderComponent implements OnInit {
 
       p.draw = function() {
         // console.log(self.click);
-        eye.update(self.click);
+        eye.update(self.eyeBlinkService.blink);
         eye.render();
-        self.click = false;
+        self.eyeBlinkService.blink = false;
       };
 
 
@@ -100,8 +101,8 @@ export class AppHeaderComponent implements OnInit {
     let myp5 = new p5(sketch);
   }
 
-  iClick(){
-    this.click = true;
+  eyeBlink(){
+    this.eyeBlinkService.blink = true;
   }
 
 

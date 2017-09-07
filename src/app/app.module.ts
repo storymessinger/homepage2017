@@ -1,3 +1,4 @@
+import { EyeBlinkService } from './services/eye-blink.service';
 import { BColorService } from './services/b-color.service';
 import { ProjectsService } from './services/projects.service';
 import { AppHeaderComponent } from './app-header/app-header.component';
@@ -45,7 +46,8 @@ import { ProjectsComponent } from './projects/projects.component';
   ],
   providers: [
     ProjectsService,
-    BColorService
+    BColorService,
+    EyeBlinkService
   ],
   bootstrap: [AppComponent]
 })

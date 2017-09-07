@@ -1,18 +1,19 @@
 <!--<div class="background"></div>-->
 <section class="contentSingle">
 
-  <article class="description description--close" [ngClass]='{descriptionOpen: descBox}'>
+  <article 
+    class="description description--close" [ngClass]='{descriptionOpen: descBox}'
+    (mouseover)='descOn()'>
     <p>
       {{project?.name}}
       <br>
       <br>
       {{project?.description}}	SERIES AROUND THE THEME OF THE THRILLER TO SHOWCASE SHOES AND ACCESSORIES IN THE APRIL/MAY MAGAZINE MONSIEUR 
-      AROUND THE THEME OF THE THRILLER TO SHOWCASE SHOES AND ACCESSORIES IN THE APRIL/MAY MAGAZINE MONSIEUR 
-      AROUND THE THEME OF THE THRILLER TO SHOWCASE SHOES AND ACCESSORIES IN THE APRIL/MAY MAGAZINE MONSIEUR 
+      AROUND THE THEME OF THE THRILLER 
     </p>
   </article>
   
-  <div class="imgs" (click)="toggleDesc()" >
+  <div class="imgs" (click)='descOff()'>
 
     <div *ngFor="let item of project.list; let i = index" class="single__img">
       <div class="single__img__container">
