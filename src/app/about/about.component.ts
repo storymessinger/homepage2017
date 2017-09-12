@@ -1,3 +1,4 @@
+import { BColorService } from '../services/b-color.service';
 import { Component, OnInit } from '@angular/core';
 
 import 'gsap';
@@ -10,9 +11,10 @@ declare var TweenLite, TweenMax, Power2, Linear, TimelineMax, ScrollMagic:any;
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bColorService:BColorService) { }
 
   ngOnInit() {
+    this.bColorService.getColor('#dddddd');
     TweenLite.to('.intro', 1.4, {opacity: 1, ease: Power2.easeIn});
     this.parallax__myDesignLab();
     this.parallax__idKAIST();
@@ -25,20 +27,6 @@ export class AboutComponent implements OnInit {
         TweenMax.fromTo("#parallaxContainer .parallax01", 1, 
           {top:500, ease: Linear.easeNone},
           {top:200, ease: Linear.easeNone}),
-
-        TweenMax.fromTo("#parallaxContainer .parallax02", 1, 
-          {top:500, ease: Linear.easeNone},
-          {top:0, ease: Linear.easeNone}),
-
-        TweenMax.fromTo("#parallaxContainer .parallax03", 1, 
-          {top:1000, ease: Linear.easeNone},
-          {top:200, ease: Linear.easeNone}),
-          
-        TweenMax.fromTo("#parallaxContainer .parallax04", 1, 
-          {top:1000, ease: Linear.easeNone},
-          {top:200, ease: Linear.easeNone}),
-				// TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "0 -500%", ease: Linear.easeNone}),
-				// TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "0 -225%", ease: Linear.easeNone})
       ]);
 
     const scene = new ScrollMagic.Scene({
@@ -55,20 +43,13 @@ export class AboutComponent implements OnInit {
     const controller = new ScrollMagic.Controller();
     const tween = new TimelineMax()
       .add([
-        TweenMax.fromTo("#parallaxContainer .parallax01", 1, 
+        TweenMax.fromTo("#parallaxContainer__idKAIST .parallax01", 1, 
           {top:500, ease: Linear.easeNone},
           {top:200, ease: Linear.easeNone}),
 
-        TweenMax.fromTo("#parallaxContainer .parallax02", 1, 
+        TweenMax.fromTo("#parallaxContainer__idKAIST .parallax02", 1, 
           {top:500, ease: Linear.easeNone},
           {top:0, ease: Linear.easeNone}),
-
-        TweenMax.fromTo("#parallaxContainer .parallax03", 1, 
-          {top:600, ease: Linear.easeNone},
-          {top:200, ease: Linear.easeNone}),
-          
-				// TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "0 -500%", ease: Linear.easeNone}),
-				// TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "0 -225%", ease: Linear.easeNone})
       ]);
 
     const scene = new ScrollMagic.Scene({

@@ -14,6 +14,7 @@
     // font-style: italic;
     line-height: 1.4;
     margin:0;
+    margin-top: 150px;
 }
 
 .intro__address {
@@ -27,18 +28,69 @@
     }
 }
 
+.intro__door {
+    margin: -120px 0 0 0;
+    height: 80vh;
+
+    position: relative;
+    font-size:2.2rem;
+    font-family: 'Calligraffitti';
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img { 
+        width: 45% 
+    };
+
+
+    .greet__text_01 {
+        position: absolute;
+        top:80px;
+        left:20px;
+    }
+    .greet__text_02 {
+        position: absolute;
+        bottom:20px;
+        right:0;
+    }
+}
+
+.intro__music {
+    height: 20vh;
+    width: 80%;
+    font-family: 'Calligraffitti';
+}
+
 @media (min-width: 768px) {
     .intro__title {
         font-size: 2.7rem;
+    }
+    .intro__music {
+        width: 500px;
     }
     .container {
         margin-top: 180px;
     }
 }
 @media (min-width: 999px) {
+    .intro__title, .intro__music, .intro__door {
+        margin: 0 200px;
+    }
+
     .intro__title {
-        margin-left:200px;
         width: 800px;
+    }
+    .intro__door {
+        margin-top: -120px;
+        font-size: 3.5rem;
+        justify-content: center;
+        img {
+            padding-left: 100px;
+            max-width: 500px;
+        }
+        
     }
     .intro__address {
         margin-left:200px;
@@ -57,17 +109,17 @@
 // }
 
 .layer {
-    height:100vh;
+    height:800px;
     position:relative;
 
 }
 
-.myDesignLab {
-    background: -moz-linear-gradient(top, #dddddd 0%, #f3a763 80%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #dddddd 0%,#f3a763 80%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #dddddd 0%,#f3a763 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f3a763',GradientType=0 ); /* IE6-9 */
-}
+// .myDesignLab {
+//     background: -moz-linear-gradient(top, #dddddd 0%, #f3a763 80%); /* FF3.6-15 */
+//     background: -webkit-linear-gradient(top, #dddddd 0%,#f3a763 80%); /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(to bottom, #dddddd 0%,#f3a763 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f3a763',GradientType=0 ); /* IE6-9 */
+// }
 
 // .idKAIST{
 //     background: -moz-linear-gradient(top, #f3a763 0%, #dddddd 80%); /* FF3.6-15 */
@@ -100,18 +152,6 @@
 .parallax01 {
     width: 40%;
     z-index: 5;
-}
-
-.parallax02 {
-    padding-left: 30%;
-    width: 30%;
-    z-index: 3;
-}
-
-.parallax03 {
-    padding-left: 50%;
-    width: 50%;
-    z-index: 4;
 }
 
 

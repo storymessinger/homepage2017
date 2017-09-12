@@ -38,13 +38,15 @@ export class MainComponent implements OnInit {
     var sketch = function ( p ) {
 
       let boxes;
+      let time = { t : 0 };
+      TweenLite.to(time, 3, {t:1, ease: Power2.easeInOut})
 
       p.setup = function() {
         let myCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
         myCanvas.parent('background');
         myCanvas.elt.style.position = "fixed"; // position the canvas to fixed     };
 
-        boxes = new Boxes(p.windowWidth, p.windowHeight);
+        boxes = new Boxes(p.windowWidth, p.windowHeight, time);
       }
 
       p.draw = function() {
@@ -62,11 +64,13 @@ export class MainComponent implements OnInit {
         w = 20;
         x_num;
         y_num;
+        time;
 
-        constructor(windowWidth:number, windowHeight:number) {
+        constructor(windowWidth:number, windowHeight:number, Time) {
           p.noFill();
           this.x_num = windowWidth / this.center_xy;
           this.y_num = windowHeight / this.center_xy;
+          this.time = Time;
         } 
 
         render() {
@@ -78,7 +82,7 @@ export class MainComponent implements OnInit {
             for (let y=0; y < this.y_num; y++ ) {
               p.stroke(p.color(180,180,180));
 
-              this.line_1(x,y);
+              this.line_1(c*x,c*y);
 
               // top
               // p.quad(c*x + 17, c*y - 10,
@@ -91,8 +95,11 @@ export class MainComponent implements OnInit {
         }
 
         line_1(x,y) {
-          let c = this.center_xy;
-          p.line(c*x + 17, c*y - 10, c*x, c*y - 20);
+          let t = this.time.t;
+          p.line(x,y,
+                 x+17*t, y-10*t)
+          // p.line(x + 17, y - 10, 
+          //        x + 17 - 17*t, y - 10 - 10*t);
         }
 
       }
