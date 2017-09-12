@@ -13,8 +13,7 @@
     font-size: 2.2rem;
     // font-style: italic;
     line-height: 1.4;
-    margin:0;
-    margin-top: 150px;
+    margin:150px 0 0 0;
 }
 
 .intro__address {
@@ -76,14 +75,14 @@
 }
 @media (min-width: 999px) {
     .intro__title, .intro__music, .intro__door {
-        margin: 0 200px;
+        margin-left: 200px;
+        margin-right: 200px;
     }
 
     .intro__title {
         width: 800px;
     }
     .intro__door {
-        margin-top: -120px;
         font-size: 3.5rem;
         justify-content: center;
         img {

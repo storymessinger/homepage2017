@@ -30,6 +30,8 @@ export class AppHeaderComponent implements OnInit {
         // myCanvas.background(200);
         myCanvas.parent('myContainer');
         eye = new Eye();
+
+        randomBlink();
       };
 
       p.draw = function() {
@@ -38,6 +40,14 @@ export class AppHeaderComponent implements OnInit {
         eye.render();
         self.eyeBlinkService.blink = false;
       };
+
+      const randomBlink = function () {
+        console.log('rnadom');
+        if (Math.random() < 0.3) {
+          self.eyeBlinkService.blink = true;
+        }
+        setTimeout(randomBlink, 5000);
+      }
 
 
       class Eye {
