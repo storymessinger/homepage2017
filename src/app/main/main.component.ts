@@ -37,19 +37,66 @@ export class MainComponent implements OnInit {
 
     var sketch = function ( p ) {
 
+      let boxes;
+
       p.setup = function() {
         let myCanvas = p.createCanvas(p.windowWidth, p.windowHeight);
         myCanvas.parent('background');
         myCanvas.elt.style.position = "fixed"; // position the canvas to fixed     };
+
+        boxes = new Boxes(p.windowWidth, p.windowHeight);
       }
 
       p.draw = function() {
         // p.background(255,204,0);
+        boxes.render();
       };
       
       p.windowResized = function(){
         p.resizeCanvas(p.windowWidth, p.windowHeight);
       };
+
+      class Boxes {
+
+        center_xy = 80;
+        w = 20;
+        x_num;
+        y_num;
+
+        constructor(windowWidth:number, windowHeight:number) {
+          p.noFill();
+          this.x_num = windowWidth / this.center_xy;
+          this.y_num = windowHeight / this.center_xy;
+        } 
+
+        render() {
+
+          let c = this.center_xy;
+          let w = this.w;
+
+          for (let x=0; x < this.x_num; x++) {
+            for (let y=0; y < this.y_num; y++ ) {
+              p.stroke(p.color(180,180,180));
+
+              this.line_1(x,y);
+
+              // top
+              // p.quad(c*x + 17, c*y - 10,
+              //        c*x,c*y - 20,
+              //        c*x - 17, c*y - 10,
+              //        c*x,      c*y);
+            }
+          }
+
+        }
+
+        line_1(x,y) {
+          let c = this.center_xy;
+          p.line(c*x + 17, c*y - 10, c*x, c*y - 20);
+        }
+
+      }
+
 
     }
 
