@@ -34,7 +34,6 @@ export class MainComponent implements OnInit {
   backgroundCanvas() {
     let self = this;
 
-
     var sketch = function ( p ) {
 
       let boxes;

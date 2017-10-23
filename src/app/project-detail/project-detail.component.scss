@@ -11,6 +11,10 @@
     margin: 140px 5% 0 5%; 
     overflow-x:hidden;
 
+    ::-webkit-scrollbar {
+        width: 25px;
+    }
+
 }
 
 .description {
@@ -45,10 +49,8 @@
 }
 
 .descriptionOpen {
-    // left: 50%;
-    // transform: translate(-50%, 0);
     width: 90vw;
-    height: 150px;
+    height: unset;
     max-height: 30vh;
     overflow-y: scroll;
 

@@ -42,7 +42,6 @@ export class AppHeaderComponent implements OnInit {
       };
 
       const randomBlink = function () {
-        console.log('rnadom');
         if (Math.random() < 0.3) {
           self.eyeBlinkService.blink = true;
         }

@@ -1,5 +1,6 @@
 import { BColorService } from '../services/b-color.service';
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 import 'gsap';
 declare var TweenLite, TweenMax, Power2, Linear, TimelineMax, ScrollMagic:any;
@@ -11,13 +12,20 @@ declare var TweenLite, TweenMax, Power2, Linear, TimelineMax, ScrollMagic:any;
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private bColorService:BColorService) { }
+  constructor(private bColorService:BColorService, private router:Router) { }
 
   ngOnInit() {
     this.bColorService.getColor('#dddddd');
     TweenLite.to('.intro', 1.4, {opacity: 1, ease: Power2.easeIn});
     this.parallax__myDesignLab();
     this.parallax__idKAIST();
+
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
+    });
   }
 
   parallax__myDesignLab() {
@@ -31,7 +39,7 @@ export class AboutComponent implements OnInit {
 
     const scene = new ScrollMagic.Scene({
       triggerElement: "#parallaxContainer",
-      duration: 2000,
+      duration: 1000,
       offset: 400,  // 800/2
     })
       .setTween(tween)
@@ -43,10 +51,6 @@ export class AboutComponent implements OnInit {
     const controller = new ScrollMagic.Controller();
     const tween = new TimelineMax()
       .add([
-        TweenMax.fromTo("#parallaxContainer__idKAIST .parallax01", 1, 
-          {top:500, ease: Linear.easeNone},
-          {top:200, ease: Linear.easeNone}),
-
         TweenMax.fromTo("#parallaxContainer__idKAIST .parallax02", 1, 
           {top:500, ease: Linear.easeNone},
           {top:0, ease: Linear.easeNone}),
@@ -54,7 +58,7 @@ export class AboutComponent implements OnInit {
 
     const scene = new ScrollMagic.Scene({
       triggerElement: "#parallaxContainer__idKAIST",
-      duration: 2000,
+      duration: 1000,
       offset: 400,  // 800/2
     })
       .setTween(tween)

@@ -57,7 +57,7 @@
     "projects": {
         "10": {
             "name": "Churros Printer : Food Frying Machine",
-            "description": "",
+            "description": "Food 3D printer which focus on making your own custom churros. By using this machine, users can actually print out the custom-shaped churros and fry it accordingly.",
             "url": "ChurrosPrinter",
             "year": 2016,
             "month":8,
@@ -92,7 +92,7 @@
         },
         "9": {
             "name": "iRobo Identity Design",
-            "description": "",
+            "description": "Website and Identity Design for a Korean startup company,' IROBO'",
             "url": "iRoboIdentity",
             "year": 2015,
             "month":8,
@@ -122,7 +122,7 @@
         },
         "8": {
             "name": "Startup KAIST Identity Design",
-            "description": "",
+            "description": "Logo Identity design for 'Startup KAIST'.",
             "url": "StartupKaistLogo",
             "year": 2016,
             "month":5,
@@ -147,7 +147,7 @@
         },
         "7": {
             "name": "Musical Train : IKEA-Hack for Children to play with music",
-            "description": "",
+            "description": "Interactive toy, ‘Musical Train’. Kids can attach ‘MusicalTrain’ notes to their IKEA train set to play with music as well as learn",
             "url": "MusicalTrain",
             "year": 2016,
             "month":6,
@@ -182,7 +182,7 @@
         },
         "6": {
             "name": "Consumer to Creator(CHI 16', 3rd author)",
-            "description": "",
+            "description": "A paper which got accepted to the CHI conference of 2016. This paper is based on long term ethnography which involved 16 families, planning to buy a furniture for thier house.",
             "url": "ConsumerToCreator",
             "year": 2016,
             "month":10,
@@ -207,7 +207,7 @@
         },
         "5": {
             "name": "BanBan App Project (Naver UXDP)",
-            "description": "",
+            "description": "This is an app design for students who live alone, named 'banban'. <br><br>The target user, a student, will use this application when he wants to order a chicken but not cannot find a friend who can order it with him. ",
             "url": "BanBan",
             "year": 2015,
             "month":6,
@@ -237,7 +237,7 @@
         },
         "4": {
             "name": "CatShelter Concept",
-            "description": "",
+            "description": "This product is a small shelter for the stray cats, placed at the parking space. When somebody parks the car over the product, the car's leftover heat is transferred to the inside of the shelter, which keeps stray cats warm and help them withstand the harsh, cold winter weather.",
             "url": "CatShelter",
             "year": 2015,
             "month":5,
@@ -262,7 +262,7 @@
         },
         "3": {
             "name": "First Snow Art Project",
-            "description": "",
+            "description": "An media art project held in the winter of 2014. A neon signage was lit bright when the first snow came to the campus of KAIST.",
             "url": "FirstSnow",
             "year": 2014,
             "month":12,
@@ -283,7 +283,7 @@
 
         "2": {
             "name": "SoundCloud Redesign Project",
-            "description": "",
+            "description": "Redesigning the Soundcloud app started out with an appluase for the beautiful design, and a  big complain about the usability. It became clear through the user test that the app itself, though beautifully made, has been made without the consideration of user's interactions. ",
             "url": "SoundCloud",
             "year": 2014,
             "month":11,
@@ -313,7 +313,7 @@
         },
     "1": {
             "name": "Primrose",
-            "description": "",
+            "description": "Evening Primrose is an interactive lamp. The concept is fundamentally based on the Korean novel, where scenery of flowers beneath the moonlight is beautifully described. This lamp let people understand what they lose when they disturb the quiet, solemn atmosphere.",
             "url": "Primrose",
             "year": 2014,
             "month":11,
